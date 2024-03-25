@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: stg_postgres__users
+    description: PII about each user such as name, phone_number.
+    columns:
+      - name: PHONE_NUMBER
+        tests:
+          - not_null
+          - unique
