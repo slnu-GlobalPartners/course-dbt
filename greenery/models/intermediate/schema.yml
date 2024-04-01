@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: int_user_orders
+    description: aggregated metrics on all the orders placed by a user.
+    columns:
+      - name: no_of_orders
+        tests:
+          - not_null
+          - positive_values
